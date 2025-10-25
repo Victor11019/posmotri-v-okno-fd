@@ -21,6 +21,20 @@ html {
   background-color: #1b1919;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
 .content {
   display: flex;
   flex-direction: row;
@@ -48,7 +62,7 @@ html {
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-self: flex-start;
+  align-items: center;
 }
 
 .search-form__fieldset {
@@ -60,9 +74,8 @@ html {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  leading-trim: NONE;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #FFFFFF
 }
 
@@ -72,22 +85,28 @@ html {
   width: fit-content;
 }
 
+.search-form__label:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .search-form__label-text {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  leading-trim: NONE;
   line-height: 100%;
-  letter-spacing: 0%;
-}
-
-.search-form__label-text:hover {
-  text-decoration: underline;
-  cursor: pointer;
+  letter-spacing: 0;
 }
 
 .search-form__textfield {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%; 
+  letter-spacing: 0;
+  word-spacing: 0;
   border-top: 1px solid #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
   border-right: none;
@@ -97,7 +116,7 @@ html {
   appearance: none;
   width: 225px;
   height: 27px;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .search-form__textfield::placeholder {
@@ -122,12 +141,11 @@ html {
 .search-form__checkbox {
   top: 27px;
   gap: 5px;
-  angle: 0 deg;
 }
 
 .search-form__pseudo-checkbox {
-  margin-top: 5px;
-  margin-right: 2px;
+  margin-top: 8px;
+  margin-right: 5px;
   width: 19px;
   height: 19px;
   border: 1px solid #FFFFFF;
@@ -160,17 +178,15 @@ html {
 .content__details {
   margin-left: 30px;
   width: 100%;
-  height: 100%;
 }
 
 .title {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
-  font-style: Bold;
+  font-style: normal;
   font-size: 75px;
-  leading-trim: NONE;
   line-height: 94%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -183,12 +199,7 @@ html {
   position: relative;
   height: 298px;
   margin-top: 26px;
-  gap: auto;
   overflow: auto;
-}
-
-.content__list {
-  gap: auto;
 }
 
 .content__list-item {
@@ -239,17 +250,17 @@ html {
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
-  line-clamp: 1;
+  -webkit-line-clamp: 1;
   white-space: nowrap;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
-  font-style: Bold;
+  font-style: normal;
   font-size: 30px;
-  leading-trim: NONE;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-bottom: 6px;
 }
 
 .content__video-card-description {
@@ -257,15 +268,14 @@ html {
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
-  line-clamp: 4;
+  -webkit-line-clamp: 4;
   white-space: normal;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  leading-trim: NONE;
   line-height: 16.2px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #FFFFFF;
 }
 
@@ -277,46 +287,38 @@ html {
 }
 
 .button {
-  border: 1px solid #FFFFFF;
   font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  border: 1px solid #FFFFFF;
   background: transparent;
   color: #FFFFFF;
 }
 
-.button:hover {
-  text-decoration: underline;
-}
+.button:hover { 
+  text-decoration: underline; 
+} 
 
 .button:active {
   background: #545050;
+}
+
+.button:focus {
+  border: 0;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFFFFF;
 }
 
 .more-button {
   width: 100%;
   height: 34px;
   cursor: pointer;
-}
-
-.more-button:hover {
-  text-decoration: underline;
-}
-
-.more-button:active {
-  background: #545050;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
 }
 
 ul,
