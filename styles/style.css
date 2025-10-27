@@ -86,11 +86,6 @@ fieldset {
   width: fit-content;
 }
 
-.search-form__label:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 .search-form__label-text {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
@@ -98,6 +93,11 @@ fieldset {
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .search-form__textfield {
@@ -157,7 +157,6 @@ fieldset {
   height: 19px;
   border: 1px solid #FFFFFF;
   padding: 1px;
-  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -167,6 +166,11 @@ fieldset {
   width: 100%;
   height: 100%;
   opacity: 0;
+}
+
+.search-form__pseudo-checkbox:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .search-form__checkbox:checked+.search-form__pseudo-checkbox::after {
