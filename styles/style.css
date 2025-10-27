@@ -86,13 +86,16 @@ fieldset {
   width: fit-content;
 }
 
-.search-form__label-text:hover {
+.search-form__label-text {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0;
+}
+
+.search-form__label .search-form__label-text:hover {
   text-decoration: underline;
   cursor: pointer;
 }
